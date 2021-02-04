@@ -27,6 +27,12 @@ img {
 
 .nav-container a {
   color: white;
+  width: 30px;
+}
+
+.nav-container a img {
+  width: 100%;
+  height: auto;
 }
 
 header {
@@ -42,10 +48,8 @@ header {
 header .logo {
   color: #B8D5CD;
   font-weight: bold;
-}
-
-header nav {
-  float: right;
+  white-space: nowrap;
+  margin: 1em 0 0 2em;
 }
 
 header nav ul {
@@ -54,9 +58,12 @@ header nav ul {
   display: flex;
 }
 
-header nav ul a {
+header nav ul li a {
   display: block;
-  padding: 0 1em;
+  padding: 0 2em;
+  width: 100px;
+  white-space: nowrap;
+  margin-top: 1em;
 }
 
 .social-header, .hero-design {
@@ -171,6 +178,14 @@ section {
   margin-bottom: 2em;
 }
 
+.btn {
+  display: block;
+  padding: 1em 2em;
+  background: #f3f3f3;
+  border-radius: 2em;
+  margin-top: 1em;
+}
+
 @media only screen and (min-width: 800px) {
   .featured, .portfolio {
     text-align: left;
@@ -242,8 +257,8 @@ section {
     width: 100%;
     float: right;
   }
-  .social-header ul img {
-    width: 20px;
+  .social-header ul li img {
+    width: 40px;
   }
   .hero {
     display: -ms-grid;

@@ -44,6 +44,9 @@ header {
   .logo {
     color: #B8D5CD;
     font-weight: bold;
+    white-space: nowrap;
+    margin: 1em 0 0 2em;
+
   }
 
   nav {
@@ -51,11 +54,14 @@ header {
 
     ul {
       display: flex;
-
-      a {
-        display: block;
-        padding: 0 1em;
-        width: 25px;
+      li {
+        a {
+          display: block;
+          padding: 0 2em;
+          width: 100px;
+          white-space: nowrap;
+          margin-top: 1em;
+        }
       }
     }
   }
@@ -170,9 +176,11 @@ section {
 }
 
 .btn {
+  display: block;
   padding: 1em 2em;
   background: #f3f3f3;
   border-radius: 2em;
+  margin-top: 1em;
 }
 
 @media only screen and (min-width: 800px) {
@@ -244,11 +252,12 @@ section {
     ul {
       display: flex;
       justify-content: space-between;
-      width: 7em;
+      width: 100%;
       float: right;
-
-      img {
-        width: 20px;
+      li {
+        img {
+          width: 40px;
+        }
       }
     }
   }
