@@ -22,7 +22,7 @@ timeline.from('.stagger1', {
 }, "-=1.5");
 
 // Animates the svg I created in Adobe XD 
-timeline.from('.fun-design', {
+timeline.from('.hero-design', {
   opacity: 0,
   y: 50,
   ease: Power4.easeOut,
