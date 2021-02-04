@@ -216,7 +216,6 @@ section {
     display: grid;
     -ms-grid-columns: 80% auto;
         grid-template-columns: 80% auto;
-    background: unset;
   }
   .nav-container header {
     background: #006A4E;
@@ -251,7 +250,6 @@ section {
     display: grid;
     -ms-grid-columns: 80% auto;
         grid-template-columns: 80% auto;
-    background: unset;
     padding: 0;
   }
   .hero .content {
@@ -280,6 +278,34 @@ section {
 @media only screen and (min-width: 1250px) {
   section {
     padding: 10em 10em 4em 10em;
+  }
+}
+
+.circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@-webkit-keyframes circleAnim {
+  from {
+    -webkit-transform: translate(337px, -254px);
+            transform: translate(337px, -254px);
+    z-index: 5;
+  }
+  to {
+    -webkit-transform: translate(337px, -240px);
+            transform: translate(337px, -240px);
+  }
+}
+
+@keyframes circleAnim {
+  from {
+    -webkit-transform: translate(337px, -254px);
+            transform: translate(337px, -254px);
+    z-index: 5;
+  }
+  to {
+    -webkit-transform: translate(337px, -240px);
+            transform: translate(337px, -240px);
   }
 }
 /*# sourceMappingURL=main.css.map */

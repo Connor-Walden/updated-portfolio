@@ -207,7 +207,6 @@ section {
   .nav-container {
     display: grid;
     grid-template-columns: 80% auto;
-    background: unset;
 
     header {
       background: #006A4E;
@@ -244,7 +243,6 @@ section {
   .hero {
     display: grid;
     grid-template-columns: 80% auto;
-    background: unset;
     padding: 0;
 
     .content {
@@ -277,5 +275,19 @@ section {
 @media only screen and (min-width: 1250px) {
   section {
     padding: 10em 10em 4em 10em;
+  }
+}
+
+.circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@keyframes circleAnim {
+  from {
+    transform: translate(337px, -254px);
+    z-index: 5;
+  }
+  to {
+    transform: translate(337px, -240px);
   }
 }
