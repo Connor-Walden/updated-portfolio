@@ -27,6 +27,12 @@ img {
 
   a {
     color: white;
+    width: 30px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -49,6 +55,7 @@ header {
       a {
         display: block;
         padding: 0 1em;
+        width: 25px;
       }
     }
   }
