@@ -1,7 +1,10 @@
+// Tell GSAP it is using the scroll trigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
+// Create a timeline for the animations to take place
 var timeline = gsap.timeline();
 
+// Everything below the navbar
 timeline.from('.content', {
   y: '-30%',
   opacity: 0,
@@ -9,6 +12,7 @@ timeline.from('.content', {
   ease: Power4.easeOut
 });
 
+// These elements want to pop in slightly offset
 timeline.from('.stagger1', {
   opacity: 0,
   y: -50,
@@ -17,13 +21,15 @@ timeline.from('.stagger1', {
   duration: 2
 }, "-=1.5");
 
-timeline.from('.hero-design', {
+// Animates the svg I created in Adobe XD 
+timeline.from('.fun-design', {
   opacity: 0,
   y: 50,
   ease: Power4.easeOut,
   duration: 1
 }, "-=2");
 
+// Animations for featured section
 gsap.from('.transition2', {
   scrollTrigger: {
     trigger: '.transition2',
@@ -35,6 +41,7 @@ gsap.from('.transition2', {
   stagger: .3
 });
 
+// Animations for portfolio section
 gsap.from('.transition3', {
   scrollTrigger: {
     trigger: '.transition3',

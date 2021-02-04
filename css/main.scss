@@ -1,3 +1,4 @@
+// Import poppins regular and bold
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 body {
@@ -22,6 +23,7 @@ img {
   width: 100%;
 }
 
+// Contains all the links in the navbar
 .nav-container {
   background: #006A4E;
 
@@ -36,6 +38,7 @@ img {
   }
 }
 
+// Contains the title of the portfolio... In this case, 'Connor Walden'
 header {
   display: flex;
   justify-content: space-between;
@@ -49,9 +52,8 @@ header {
 
   }
 
+  // Correctly spacing and aligning the links in the navbar
   nav {
-  //   float: left;
-
     ul {
       display: flex;
       li {
@@ -67,7 +69,8 @@ header {
   }
 }
 
-.social-header, .hero-design {
+// Hiding socials for mobile
+.social-header, .fun-design {
   display: none;
 }
 
@@ -79,6 +82,7 @@ header {
   padding: 4em;
 }
 
+// This is the info inside the hero (name, contact info, link to download resume)
 .meet {
   display: flex;
   margin: 0 auto;
@@ -92,6 +96,7 @@ header {
   }
 }
 
+// Setting size of the scroll svg within the hero
 .scroll {
   width: 30px;
 }
@@ -101,6 +106,7 @@ section {
   text-align: center;
 }
 
+// CSS for the featured section
 .featured {
   background: white;
 }
@@ -128,6 +134,7 @@ section {
   line-height: 1.8em;
 }
 
+// CSS for the skills section
 .skills {
   background: #b8d5cd;
 }
@@ -166,6 +173,7 @@ section {
   }
 }
 
+// CSS for the portfolio section containing all my good projects
 .portfolio {
   background: #f7f7f7;
 }
@@ -175,6 +183,7 @@ section {
   margin-bottom: 2em;
 }
 
+// Btn class is only applied on the link for the download
 .btn {
   display: block;
   padding: 1em 2em;
@@ -183,6 +192,7 @@ section {
   margin-top: 1em;
 }
 
+// When the user is not viewing on mobile but on something a bit larger (iPads or tablets)
 @media only screen and (min-width: 800px) {
   .featured, .portfolio {
     text-align: left;
@@ -224,6 +234,7 @@ section {
   }
 }
 
+// When the user is viewing from anything above 1050px, usually this is desktop / laptop
 @media only screen and (min-width: 1050px) {
   .nav-container {
     display: grid;
@@ -286,7 +297,7 @@ section {
       margin: 1em 1em 0 0;
     }
   }
-  .hero-design {
+  .fun-design {
     display: unset;
     margin-left: -40%;
     margin-top: 15%;
@@ -294,6 +305,7 @@ section {
   }
 }
 
+// Extra padding for larger screens 
 @media only screen and (min-width: 1250px) {
   section {
     padding: 10em 10em 4em 10em;
@@ -304,6 +316,7 @@ section {
   animation: circleAnim 1s infinite alternate-reverse;
 }
 
+// Key frames for the scroll svg animation
 @keyframes circleAnim {
   from {
     transform: translate(337px, -254px);
