@@ -103,31 +103,12 @@ section {
   text-align: center;
 }
 
-.featured {
-  background: white;
-}
-
 .subtitle {
   text-transform: uppercase;
   font-weight: bold;
   color: #006A4E;
   letter-spacing: .2em;
   font-size: 0.85em;
-}
-
-.featured-title {
-  color: black;
-  font-weight: bold;
-  font-size: 1.3em;
-  margin-top: -0.4em;
-  display: block;
-}
-
-.featured-desc {
-  color: #3b3b3b;
-  margin-bottom: 3em;
-  font-size: 0.9em;
-  line-height: 1.8em;
 }
 
 .skills {
@@ -165,10 +146,6 @@ section {
   font-weight: bold;
 }
 
-.skills-container ul li .featured-desc {
-  margin-bottom: 2em;
-}
-
 .portfolio {
   background: #f7f7f7;
 }
@@ -187,10 +164,10 @@ section {
 }
 
 @media only screen and (min-width: 800px) {
-  .featured, .portfolio {
+  .portfolio {
     text-align: left;
   }
-  .featured, .portfolio-container {
+  .portfolio-container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 40% auto;
@@ -265,12 +242,13 @@ section {
     display: grid;
     -ms-grid-columns: 80% auto;
         grid-template-columns: 80% auto;
-    padding: 0;
   }
   .hero .content {
     background: #5CA08E;
     padding: 6em 8em 6em 4em;
     text-align: left;
+    -webkit-transform: translate(0, -20px);
+            transform: translate(0, -20px);
   }
   .hero .content h1 {
     font-size: 3em;

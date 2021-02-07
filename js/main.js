@@ -6,7 +6,7 @@ var timeline = gsap.timeline();
 
 // Everything below the navbar
 timeline.from('.content', {
-  y: '-30%',
+  y: '-40%',
   opacity: 0,
   duration: 2,
   ease: Power4.easeOut
@@ -28,18 +28,6 @@ timeline.from('.hero-design', {
   ease: Power4.easeOut,
   duration: 1
 }, "-=2");
-
-// Animations for featured section
-gsap.from('.transition2', {
-  scrollTrigger: {
-    trigger: '.transition2',
-    start: 'top bottom'
-  },
-  y: 50,
-  opacity: 0,
-  duration: 1.2,
-  stagger: .3
-});
 
 // Animations for portfolio section
 gsap.from('.transition3', {

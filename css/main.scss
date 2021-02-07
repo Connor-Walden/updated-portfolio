@@ -106,32 +106,12 @@ section {
   text-align: center;
 }
 
-// CSS for the featured section
-.featured {
-  background: white;
-}
-
 .subtitle {
   text-transform: uppercase;
   font-weight: bold;
   color: #006A4E;
   letter-spacing: .2em;
   font-size: 0.85em;
-}
-
-.featured-title {
-  color: black;
-  font-weight: bold;
-  font-size: 1.3em;
-  margin-top: -0.4em;
-  display: block;
-}
-
-.featured-desc {
-  color: #3b3b3b;
-  margin-bottom: 3em;
-  font-size: 0.9em;
-  line-height: 1.8em;
 }
 
 // CSS for the skills section
@@ -167,10 +147,6 @@ section {
   .skill-title {
     font-weight: bold;
   }
-
-  .featured-desc {
-    margin-bottom: 2em;
-  }
 }
 
 // CSS for the portfolio section containing all my good projects
@@ -194,11 +170,11 @@ section {
 
 // When the user is not viewing on mobile but on something a bit larger (iPads or tablets)
 @media only screen and (min-width: 800px) {
-  .featured, .portfolio {
+  .portfolio {
     text-align: left;
   }
 
-  .featured, .portfolio-container {
+  .portfolio-container {
     display: grid;
     grid-template-columns: 40% auto;
   }
@@ -276,12 +252,12 @@ section {
   .hero {
     display: grid;
     grid-template-columns: 80% auto;
-    padding: 0;
 
     .content {
       background: #5CA08E;
       padding: 6em 8em 6em 4em;
       text-align: left;
+      transform: translate(0, -20px);
     
       h1 {
         font-size: 3em;
