@@ -19,7 +19,7 @@ timeline.from('.stagger1', {
 
 timeline.from('.hero-design', {
   opacity: 0,
-  y: 50,
+  y: -50,
   ease: Power4.easeOut,
   duration: 1
 }, "-=2");
