@@ -78,6 +78,7 @@ header nav ul li a {
   display: grid;
   text-align: center;
   padding: 4em;
+  padding-bottom: 0;
 }
 
 .meet {
