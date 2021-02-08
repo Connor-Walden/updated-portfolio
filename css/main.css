@@ -184,9 +184,7 @@ section {
     margin-top: 1em;
   }
   .skills {
-    margin-top: -5em;
-    margin-bottom: -7em;
-    padding-top: 7em;
+    padding-top: 5em;
   }
   .skills-container ul {
     display: -ms-grid;
