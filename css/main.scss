@@ -75,7 +75,7 @@ header {
 }
 
 .hero {
-  background: #5CA08E;
+  background: linear-gradient(to right, #5CA08E, #73cab3);
   color: white;
   display: grid;
   text-align: center;
@@ -254,7 +254,7 @@ section {
     grid-template-columns: 80% auto;
 
     .content {
-      background: #5CA08E;
+      background: linear-gradient(to right, #5CA08E, #6dc0aa);
       padding: 6em 8em 6em 4em;
       text-align: left;
       transform: translate(0, -20px);

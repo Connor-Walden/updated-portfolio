@@ -71,7 +71,8 @@ header nav ul li a {
 }
 
 .hero {
-  background: #5CA08E;
+  background: -webkit-gradient(linear, left top, right top, from(#5CA08E), to(#73cab3));
+  background: linear-gradient(to right, #5CA08E, #73cab3);
   color: white;
   display: -ms-grid;
   display: grid;
@@ -244,7 +245,8 @@ section {
         grid-template-columns: 80% auto;
   }
   .hero .content {
-    background: #5CA08E;
+    background: -webkit-gradient(linear, left top, right top, from(#5CA08E), to(#6dc0aa));
+    background: linear-gradient(to right, #5CA08E, #6dc0aa);
     padding: 6em 8em 6em 4em;
     text-align: left;
     -webkit-transform: translate(0, -20px);
